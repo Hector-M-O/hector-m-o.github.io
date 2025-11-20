@@ -231,6 +231,7 @@ https://css-tricks.com/almanac/selectors/f/first-letter/
 
 #selected-publications {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -30px;
   justify-content: space-around;
   max-width: 900px;
@@ -379,4 +380,5 @@ footer {
   margin-top: 20px;
   padding: 10px;
   border-top: 1px solid rgb(200, 200, 200);
+
 }
