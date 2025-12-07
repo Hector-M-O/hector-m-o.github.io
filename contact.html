@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Writer Héctor Muiños' official website. Find here all his publications, latest news and contact details.">
+    <meta name="author" content="Héctor Muiños">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Héctor Muiños - Novelist & Scholar</title>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script>
+        (function(){
+            emailjs.init({
+            publicKey: "MIYUf_gmtueru38x5",
+        });
+        })();
+    </script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="tabs-header">
+        <div class="tabs-container">
+            <h1 class="tabs-title"><a href="index.html">Héctor Muiños</a></h1>
+            <nav class="tabs-nav">
+                <ul>
+                    <!--<li><a href="./about.html">About</a></li>-->
+                    <!--<li><a href="./books.html">Books</a></li>-->
+                    <li><a href="./academia.html">Academia</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content-contact">
+        <main>
+            <section id="contact">
+                <h3>CONTACT</h3>
+                <p>If you would like to get in touch, please <!--reach out to my literary agent or -->use the contact form below.</p>
+                    <!--<h4>Literary Representation</h4>
+                        <p>Name with <a target="_blank" href="www.website">link</a> to their website.<br>
+                        Adress<br>
+                        Website.
+                        </p>-->
+                                    
+                <form>
+                    <fieldset>
+                        <legend>Name <span style="color:rgb(133, 133, 133);font-size:0.8em;">(required)</span></legend>
+                            <div class="name-fields">
+                                <div class="frist-name-field">
+                                    <label class="name-label" for="first-name">First Name</label><br>
+                                    <input type="text" id="first-name" name="first-name" required><br><br>
+                                </div>
+                                <div class="last-name-field">
+                                    <label class="name-label" for="last-name">Last Name</label><br>
+                                    <input type="text" id="last-name" name="last-name" required><br>
+                                </div>
+                            </div>
+                    </fieldset><br>
+                    <label for="email">Email <span style="color:rgb(133, 133, 133);font-size:0.8em;">(required)</span></label><br>
+                    <input type="email" id="email" name="email" placeholder="Tyndallsghost@example.com" required><br><br>
+                    <label for="subject">Subject <span style="color:rgb(133, 133, 133);font-size:0.8em;">(required)</span></label><br>
+                    <input type="text" id="subject" name="subject" required><br><br>
+                    <label for="message">Message <span style="color:rgb(133, 133, 133);font-size:0.8em;">(required)</span></label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    <button type="button" onclick="sendMail()">Submit</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <div class="footer-content">
+        <footer>
+            <p>&copy; 2025 Héctor Muiños. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
