@@ -1,4 +1,11 @@
 function sendMail(){
+    // validate form before sending
+    const form = document.querySelector('form');
+    if (!form.checkValidity()) {
+        form.reportValidity(); // shows browser messages
+        return;
+    }
+    
     if (!window.emailjs || typeof window.emailjs.send !== 'function') {
         console.error("EmailJS not loaded or initialized. Make sure email.min.js is included and emailjs.init(...) was called correctly in the page.");
         alert("Email service is not available right now. Please try again later.");
